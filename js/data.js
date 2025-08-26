@@ -94,6 +94,21 @@ const advantages = [
     },
 ]
 
+const headeres = [
+    {
+        icon: "/assets/cube.svg"
+    },
+    {
+        icon: "/assets/drop.svg",
+        profile: "/assets/profile.svg",
+        options: [
+            "Profile",
+            "Settings",
+            "Delete Account"
+        ]
+    }
+]
+
 const footerens = {
     smalltext: "Easy Camper",
     headline: "When Passion Meets Comfort.",
