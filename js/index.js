@@ -47,7 +47,21 @@ function loadHeaderContent() {
 }
 
 function loadFooterContent() {
+	footer.insertAdjacentHTML("beforeend", `<div id="social-links"><div class="endIntro"><h3>${footerens.smalltext}</h3><h2>${footerens.headline}</h2></div></div>`)
+	let divHolder = footer.querySelector("footer > div")
+	footerens.options.forEach((cValue) => {
+		let endOutput = `<div class="infoBox"><h3>${cValue.headline}</h3>`
+		cValue.links.forEach((value) => {
+			endOutput = `${endOutput}<a href="#">${value}</a>`
+		})
+		divHolder.insertAdjacentHTML("beforeend", `${endOutput}</div>`)
+	})
 
+	footer.insertAdjacentHTML("beforeend", `<nav class="navigation"><p>${footerens.bottom.headline}</p><ol class="links"></ol></nav>`)
+	let navListHolder = footer.querySelector("nav > ol")
+	footerens.bottom.options.forEach((cValue) => {
+		navListHolder.insertAdjacentHTML("beforeend", `<li><a href="#">${cValue}</a></li>`)
+	})
 }
 
 // RUNS
