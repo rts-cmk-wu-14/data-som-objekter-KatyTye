@@ -43,7 +43,17 @@ function loadSectionsContent() {
 }
 
 function loadHeaderContent() {
-
+	headeres.forEach((cValue, idx) => {
+		if (idx == 0) {
+			header.insertAdjacentHTML("beforeend", `<figure id="website-icon"><img src="${cValue.icon}" alt="website icon"></figure>`)
+		} else {
+			header.insertAdjacentHTML("beforeend", `<div id="menu"><figure><img id="menu-status" src="${cValue.icon}" alt="icon"><img src="${cValue.profile}" alt="profile icon"></figure><ol id="menu-items"></ol></div>`)
+			let menuItems = header.querySelector("header > div > ol")
+			cValue.options.forEach((value) => {
+				menuItems.insertAdjacentHTML("beforeend", `<li><a href="#">${value}</li>`)
+			})
+		}
+	})
 }
 
 function loadFooterContent() {
