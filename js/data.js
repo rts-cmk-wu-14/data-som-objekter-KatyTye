@@ -1,5 +1,4 @@
-
-let hero = {
+const hero = {
     image: "https://dazzling-squirrel-77a63d.netlify.app/imgs/hero.png",
     headline: "Find out how we can save your time in Backpacking in Europe",
     copy: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ac amet id eget scelerisque amet etiam in sit commodo. Pretium ut duis orci pulvinar pretium id consectetur.",
@@ -7,7 +6,7 @@ let hero = {
 }
 
 
-let services = [
+const services = [
     {
         illustration: "https://dazzling-squirrel-77a63d.netlify.app/imgs/illustrations/exploring.png",
         headline: "Promoting your territory towards foreign tourists",
@@ -19,7 +18,7 @@ let services = [
         headline: "Additional services designed for the needs of campers",
         text: "Travelling often means that you dont have time to organise excursions along your route. EasyCamper takes care of that!",
         linktext: "Discover the Guided Tours and additional services that you can link to your structure"
-    }, 
+    },
     {
         illustration: "https://dazzling-squirrel-77a63d.netlify.app/imgs/illustrations/destination.png",
         headline: "Free online showcase with promotion in Italy and abroad",
@@ -28,9 +27,9 @@ let services = [
     },
 ]
 
-let facilities = {
+const facilities = {
     headline: "Making your facility known is our priority",
-    options : [
+    options: [
         {
             icon: "https://dazzling-squirrel-77a63d.netlify.app/imgs/icons/list-check.png",
             headline: "Choose the type of stop",
@@ -54,7 +53,7 @@ let facilities = {
     ]
 }
 
-let sites = {
+const sites = {
     headline: "Join the community campervan sites managers.",
     text: "Discover all the equibbed areas in Italy. Find the shop with all the services for you and your camper.",
     btnicon: "https://dazzling-squirrel-77a63d.netlify.app/imgs/icons/arrow-icon.png",
@@ -77,22 +76,63 @@ let sites = {
     ]
 }
 
-let advantages = [
+const advantages = [
     {
-        icon:"https://dazzling-squirrel-77a63d.netlify.app/imgs/icons/compare.png",
+        icon: "https://dazzling-squirrel-77a63d.netlify.app/imgs/icons/compare.png",
         headline: "Convenience and Transparency",
         text: "You don’t have to find out later or only after camenierk and trarsparent Easyamper ratains pliacas and beautias of your tariaary and halpin a fixed commission on each transaction of 5"
     },
     {
-        icon:"https://dazzling-squirrel-77a63d.netlify.app/imgs/icons/library_books.png",
+        icon: "https://dazzling-squirrel-77a63d.netlify.app/imgs/icons/library_books.png",
         headline: "Digital marketing and editorial support",
         text: "You don’t have to find out later or only after camenierk and trarsparent Easyamper ratains pliacas and beautias of your tariaary and halpin a fixed commission on each transaction of 5"
     },
     {
-        icon:"https://dazzling-squirrel-77a63d.netlify.app/imgs/icons/Compare-HSV.png",
+        icon: "https://dazzling-squirrel-77a63d.netlify.app/imgs/icons/Compare-HSV.png",
         headline: "Community of services dedicated to campers",
         text: "You don’t have to find out later or only after camenierk and trarsparent Easyamper ratains pliacas and beautias of your tariaary and halpin a fixed commission on each transaction of 5"
     },
 ]
 
-// Opret dit dataobjekt til footerens indhold herunder
+const footerens = {
+    smalltext: "Easy Camper",
+    headline: "When Passion Meets Comfort.",
+    options: [
+        {
+            headline: "Discover the Network",
+            links: [
+                "Where to shop",
+                "Tour Guided",
+                "Our Tours",
+                "About Us"
+            ]
+        },
+        {
+            headline: "Become a Manager",
+            links: [
+                "Join your Pairing",
+                "Offer your Service",
+                "Are you a guide?"
+            ]
+        },
+        {
+            headline: "Assistance",
+            links: [
+                "Support Center",
+                "FAQs",
+                "Cancallation Options",
+                "Reliablity and Sequrity"
+            ]
+        }
+    ],
+    bottom: {
+        headline: "EazyCamper. All rights reserved.",
+        options: [
+            "About",
+            "Site Map",
+            "Terms",
+            "Privacy Policy",
+            "Teams"
+        ]
+    }
+}
