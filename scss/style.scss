@@ -9,9 +9,10 @@ main {
 	}
 
 	#service-list {
-		display: grid;
+		gap: 30px;
+		display: flex;
 		list-style-type: none;
-		grid-template-columns: 1fr 1fr 1fr;
+		justify-content: center;
 
 		li {
 			gap: 30px;
@@ -27,32 +28,54 @@ main {
 
 	.hero {
 		height: 105vh;
+		
+		figure {
+			display: grid;
 
-		article {
-			padding: 4%;
-			width: 52vw;
-			margin-left: 60px;
-			transform: translateY(-55%);
-			background: var(--four-text-color);
-			box-shadow: 0px 9px 30px 3px #00000012;
+			figcaption {
+				padding: 4%;
+				width: 52vw;
+				grid-area: 1/1;
+				padding-right: 12%;
+				margin: 27.5% 0 0 30px;
+				background: var(--four-text-color);
+				box-shadow: 0px 9px 30px 3px #00000012;
 
-			h1 {
-				font-size: 46px;
+				h1 {
+					font-size: 39px;
 
-				span {
-					color: var(--third-text-color);
+					span {
+						color: var(--third-text-color);
+					}
 				}
-			}
 
-			p {
-				margin: 30px 0;
-				font-size: 18px;
-				color: var(--secondary-text-color);
+				p {
+					margin: 30px 0;
+					font-size: 18px;
+				}
 			}
 		}
 
-		figure img {
-			height: 650px;
+		figure > img {
+			width: 100%;
+			grid-area: 1/1;
+		}
+	}
+
+	.services {
+
+		li {
+			h3 {
+				font-size: 24px;
+			}
+
+			p {
+				font-size: 16px;
+			}
+
+			a {
+				font-size: 18px;
+			}
 		}
 	}
 
@@ -81,9 +104,7 @@ main {
 
 				p {
 					display: block;
-					font-size: 14px;
 					margin-top: 40px;
-					color: var(--secondary-text-color);
 				}
 
 				h3 {
@@ -111,7 +132,6 @@ main {
 				font-size: 18px;
 				margin-top: 30px;
 				margin-bottom: 50px;
-				color: var(--secondary-text-color);
 			}
 		}
 
@@ -171,11 +191,6 @@ main {
 				font-size: 22px;
 				margin-top: 50px;
 				margin-bottom: 20px;
-			}
-
-			p {
-				font-size: 14px;
-				color: var(--secondary-text-color);
 			}
 		}
 	}

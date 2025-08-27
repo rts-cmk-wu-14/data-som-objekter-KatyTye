@@ -10,7 +10,7 @@ function loadSectionsContent() {
 		console.log(sectionType)
 		if (sectionType == "hero") {
 			let replacedHeadline = hero.headline.replace("save your time", "<span>save your time</span>")
-			sectionElm.insertAdjacentHTML("beforeend", `<figure><img src="${hero.image}" alt="A image of someone."></figure><article><h1>${replacedHeadline}</h1><p>${hero.copy}</p><button><img src="${hero.icon}" alt="globe"> Explore</button></article>`)
+			sectionElm.insertAdjacentHTML("beforeend", `<figure><img src="${hero.image}" alt="A image of someone."><figcaption><h1>${replacedHeadline}</h1><p>${hero.copy}</p><button><img src="${hero.icon}" alt="globe"> Explore</button></figcaption></figure>`)
 		} else if (sectionType == "services") {
 			sectionElm.insertAdjacentHTML("beforeend", `<ol id="service-list"></ol>`)
 			let listHolder = sectionElm.querySelector("ol")
@@ -72,6 +72,11 @@ function loadFooterContent() {
 	footerens.bottom.options.forEach((cValue) => {
 		navListHolder.insertAdjacentHTML("beforeend", `<li><a href="#">${cValue}</a></li>`)
 	})
+
+	const profile = document.querySelector(".wrapper #menu")
+	console.log(profile);
+
+	profile.addEventListener("click", () => { profile.classList.toggle("open") })
 }
 
 // RUNS

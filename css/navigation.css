@@ -13,6 +13,8 @@ header.header #website-icon {
   height: fit-content;
 }
 header.header #menu {
+  width: 86px;
+  height: 52px;
   padding: 10px;
   min-width: 86px;
   overflow: hidden;
@@ -39,6 +41,8 @@ header.header #menu #menu-items li {
   margin-top: 10px;
 }
 header.header #menu.open {
+  width: 150px;
+  height: 162px;
   border-radius: 10px;
 }
 header.header #menu.open #menu-status {

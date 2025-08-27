@@ -16,6 +16,8 @@ header.header {
 	}
 
 	#menu {
+		width: 86px;
+		height: 52px;
 		padding: 10px;
 		min-width: 86px;
 		overflow: hidden;
@@ -47,6 +49,8 @@ header.header {
 	}
 
 	#menu.open {
+		width: 150px;
+		height: 162px;
 		border-radius: 10px;
 
 		#menu-status {

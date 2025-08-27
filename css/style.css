@@ -6,9 +6,10 @@ main section:not(.hero) {
   padding-bottom: 200px;
 }
 main #service-list {
-  display: grid;
+  gap: 30px;
+  display: flex;
   list-style-type: none;
-  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: center;
 }
 main #service-list li {
   gap: 30px;
@@ -22,27 +23,40 @@ main #service-list img {
 main .hero {
   height: 105vh;
 }
-main .hero article {
+main .hero figure {
+  display: grid;
+}
+main .hero figure figcaption {
   padding: 4%;
   width: 52vw;
-  margin-left: 60px;
-  transform: translateY(-55%);
+  grid-area: 1/1;
+  padding-right: 12%;
+  margin: 27.5% 0 0 30px;
   background: var(--four-text-color);
   box-shadow: 0px 9px 30px 3px rgba(0, 0, 0, 0.0705882353);
 }
-main .hero article h1 {
-  font-size: 46px;
+main .hero figure figcaption h1 {
+  font-size: 39px;
 }
-main .hero article h1 span {
+main .hero figure figcaption h1 span {
   color: var(--third-text-color);
 }
-main .hero article p {
+main .hero figure figcaption p {
   margin: 30px 0;
   font-size: 18px;
-  color: var(--secondary-text-color);
 }
-main .hero figure img {
-  height: 650px;
+main .hero figure > img {
+  width: 100%;
+  grid-area: 1/1;
+}
+main .services li h3 {
+  font-size: 24px;
+}
+main .services li p {
+  font-size: 16px;
+}
+main .services li a {
+  font-size: 18px;
 }
 main .facilities h2 {
   font-size: 36px;
@@ -65,9 +79,7 @@ main .facilities #facilities-list li {
 }
 main .facilities #facilities-list li p {
   display: block;
-  font-size: 14px;
   margin-top: 40px;
-  color: var(--secondary-text-color);
 }
 main .facilities #facilities-list li h3 {
   font-size: 22px;
@@ -87,7 +99,6 @@ main .sites article p {
   font-size: 18px;
   margin-top: 30px;
   margin-bottom: 50px;
-  color: var(--secondary-text-color);
 }
 main .sites #sites-list {
   gap: 45px;
@@ -135,8 +146,4 @@ main .advantages #advantages-list h3 {
   font-size: 22px;
   margin-top: 50px;
   margin-bottom: 20px;
-}
-main .advantages #advantages-list p {
-  font-size: 14px;
-  color: var(--secondary-text-color);
 }
