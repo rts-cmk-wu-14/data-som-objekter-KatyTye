@@ -1,2 +1,182 @@
 // MAIN STYLING SHEET FOR HTML
 
+main {
+	overflow: hidden;
+
+	section:not(.hero) {
+		padding: 0 80px;
+		padding-bottom: 200px;
+	}
+
+	#service-list {
+		display: grid;
+		list-style-type: none;
+		grid-template-columns: 1fr 1fr 1fr;
+
+		li {
+			gap: 30px;
+			display: flex;
+			align-items: flex-start;
+			flex-direction: column;
+		}
+
+		img {
+			padding-bottom: 60px;
+		}
+	}
+
+	.hero {
+		height: 105vh;
+
+		article {
+			padding: 4%;
+			width: 52vw;
+			margin-left: 60px;
+			transform: translateY(-55%);
+			background: var(--four-text-color);
+			box-shadow: 0px 9px 30px 3px #00000012;
+
+			h1 {
+				font-size: 46px;
+
+				span {
+					color: var(--third-text-color);
+				}
+			}
+
+			p {
+				margin: 30px 0;
+				font-size: 18px;
+				color: var(--secondary-text-color);
+			}
+		}
+
+		figure img {
+			height: 650px;
+		}
+	}
+
+	.facilities {
+		h2 {
+			font-size: 36px;
+		}
+
+		#facilities-list {
+			gap: 60px;
+			display: flex;
+			flex-wrap: wrap;
+			margin-top: 100px;
+			list-style-type: none;
+
+			li:nth-of-type(1) a, li:nth-of-type(3) a {
+				margin-top: 43px;
+			}
+
+			li:nth-of-type(2) a, li:nth-of-type(4) a {
+				margin-top: 61px;
+			}
+
+			li {
+				width: 260px;
+
+				p {
+					display: block;
+					font-size: 14px;
+					margin-top: 40px;
+					color: var(--secondary-text-color);
+				}
+
+				h3 {
+					font-size: 22px;
+					margin-top: 60px;
+				}
+
+				a {
+					display: block;
+				}
+			}
+		}
+	}
+
+	.sites {
+		display: grid;
+		grid-template-columns: 1fr 3fr;
+
+		article {
+			h2 {
+				font-size: 36px;
+			}
+
+			p {
+				font-size: 18px;
+				margin-top: 30px;
+				margin-bottom: 50px;
+				color: var(--secondary-text-color);
+			}
+		}
+
+		#sites-list {
+			gap: 45px;
+			display: flex;
+			flex-wrap: wrap;
+			list-style-type: none;
+			justify-content: right;
+
+			figure {
+				width: 230px;
+				height: 480px;
+				overflow: hidden;
+			}
+
+			img {
+				max-height: 418px;
+			}
+
+			h3 {
+				font-size: 24px;
+			}
+
+			figcaption {
+				font-size: 14px;
+				margin-top: 2px;
+				color: var(--secondary-text-color);
+			}
+
+			a {
+				font-size: 18px;
+				font-weight: normal;
+			}
+		}
+	}
+
+	.advantages {
+		h2 {
+			font-size: 36px;
+			margin-bottom: 100px;
+		}
+
+		#advantages-list {
+			gap: 40px;
+			display: flex;
+			flex-wrap: wrap;
+			list-style-type: none;
+			justify-content: center;
+
+			li {
+				width: 386px;
+			}
+
+			h3 {
+				height: 56px;
+				font-size: 22px;
+				margin-top: 50px;
+				margin-bottom: 20px;
+			}
+
+			p {
+				font-size: 14px;
+				color: var(--secondary-text-color);
+			}
+		}
+	}
+}

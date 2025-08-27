@@ -1,0 +1,142 @@
+main {
+  overflow: hidden;
+}
+main section:not(.hero) {
+  padding: 0 80px;
+  padding-bottom: 200px;
+}
+main #service-list {
+  display: grid;
+  list-style-type: none;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+main #service-list li {
+  gap: 30px;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+main #service-list img {
+  padding-bottom: 60px;
+}
+main .hero {
+  height: 105vh;
+}
+main .hero article {
+  padding: 4%;
+  width: 52vw;
+  margin-left: 60px;
+  transform: translateY(-55%);
+  background: var(--four-text-color);
+  box-shadow: 0px 9px 30px 3px rgba(0, 0, 0, 0.0705882353);
+}
+main .hero article h1 {
+  font-size: 46px;
+}
+main .hero article h1 span {
+  color: var(--third-text-color);
+}
+main .hero article p {
+  margin: 30px 0;
+  font-size: 18px;
+  color: var(--secondary-text-color);
+}
+main .hero figure img {
+  height: 650px;
+}
+main .facilities h2 {
+  font-size: 36px;
+}
+main .facilities #facilities-list {
+  gap: 60px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 100px;
+  list-style-type: none;
+}
+main .facilities #facilities-list li:nth-of-type(1) a, main .facilities #facilities-list li:nth-of-type(3) a {
+  margin-top: 43px;
+}
+main .facilities #facilities-list li:nth-of-type(2) a, main .facilities #facilities-list li:nth-of-type(4) a {
+  margin-top: 61px;
+}
+main .facilities #facilities-list li {
+  width: 260px;
+}
+main .facilities #facilities-list li p {
+  display: block;
+  font-size: 14px;
+  margin-top: 40px;
+  color: var(--secondary-text-color);
+}
+main .facilities #facilities-list li h3 {
+  font-size: 22px;
+  margin-top: 60px;
+}
+main .facilities #facilities-list li a {
+  display: block;
+}
+main .sites {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+}
+main .sites article h2 {
+  font-size: 36px;
+}
+main .sites article p {
+  font-size: 18px;
+  margin-top: 30px;
+  margin-bottom: 50px;
+  color: var(--secondary-text-color);
+}
+main .sites #sites-list {
+  gap: 45px;
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  justify-content: right;
+}
+main .sites #sites-list figure {
+  width: 230px;
+  height: 480px;
+  overflow: hidden;
+}
+main .sites #sites-list img {
+  max-height: 418px;
+}
+main .sites #sites-list h3 {
+  font-size: 24px;
+}
+main .sites #sites-list figcaption {
+  font-size: 14px;
+  margin-top: 2px;
+  color: var(--secondary-text-color);
+}
+main .sites #sites-list a {
+  font-size: 18px;
+  font-weight: normal;
+}
+main .advantages h2 {
+  font-size: 36px;
+  margin-bottom: 100px;
+}
+main .advantages #advantages-list {
+  gap: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  justify-content: center;
+}
+main .advantages #advantages-list li {
+  width: 386px;
+}
+main .advantages #advantages-list h3 {
+  height: 56px;
+  font-size: 22px;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+main .advantages #advantages-list p {
+  font-size: 14px;
+  color: var(--secondary-text-color);
+}
